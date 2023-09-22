@@ -686,6 +686,37 @@ a {
     width: 270px;
   }
 }
+.main__menu {
+  background-image: url("../img/menu/menu.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__menu-body {
+  height: 900px;
+  display: flex;
+  align-items: center;
+}
+
+.main__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.main__menu-link {
+  color: var(--white-color);
+}
+.main__menu-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 991.98px) {
+  .main__menu-body {
+    height: 600px;
+  }
+}
 .burger__menu {
   display: none;
 }
