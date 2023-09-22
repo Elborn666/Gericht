@@ -4,6 +4,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.main__menu-container {
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url('../icon/logo.svg');
+        background-repeat: no-repeat;
+        width: 146px;
+        height: 146px;
+        top: 0px;
+        left: 0px;
+    }
+}
 .main__menu-body {
     height: 900px;
     display: flex;
