@@ -11,10 +11,6 @@
     justify-content: center;
     align-items: center;
 }
-.main__special-lable {
-}
-.main__lable {
-}
 .main__special-title {
     text-align: center;
     margin-bottom: 64px;
@@ -44,8 +40,6 @@
     flex-direction: column;
     gap: 40px;
 }
-.main__special-item {
-}
 .main__special-wrapp-name {
     display: flex;
     align-items: center;
@@ -74,10 +68,6 @@
     letter-spacing: 0.92px;
     color: var(--white-color);
 }
-.main__special-wrapp-bottle {
-}
-.main__specila-bottle {
-}
 .main__special-img {
     margin-left: 32px;
     margin-right: 32px;
@@ -91,8 +81,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.main__special-button {
 }
 @media screen and (max-width: 1399.98px){
     .special__img {
@@ -135,8 +123,8 @@
 }
 @media screen and (max-width: 767.98px){
     .main__special-container {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 @media screen and (max-width: 479.98px){
