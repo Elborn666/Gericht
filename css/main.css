@@ -920,6 +920,22 @@ a {
   height: 40px;
 }
 
+.main__chef-text {
+  position: relative;
+  text-indent: 60px;
+}
+.main__chef-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../icon/quotes.svg");
+  background-repeat: no-repeat;
+  top: -15px;
+  left: 0px;
+  width: 47px;
+  height: 40px;
+}
+
 .main__chef-name {
   font-family: "Cormorant Upright";
   font-size: 32px;
