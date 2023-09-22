@@ -1,0 +1,146 @@
+.main__special {
+    background-color: var(--bg-color);
+}
+.main__special-container {
+    padding-top: 152px;
+    padding-bottom: 152px;
+}
+.main__special-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__special-lable {
+}
+.main__lable {
+}
+.main__special-title {
+    text-align: center;
+    margin-bottom: 64px;
+}
+.main__special-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+}
+.main__special-wine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main__special-subtitle {
+    margin-bottom: 48px;
+    font-family: "Cormorant Upright";
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.3; /* 58.5px */
+    letter-spacing: 1.8px;
+    color: var(--white-color);
+    text-align: center;
+}
+.main__special-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.main__special-item {
+}
+.main__special-wrapp-name {
+    display: flex;
+    align-items: center;
+}
+.main__special-name {
+    margin-right: auto;
+    font-family: "Cormorant Upright";
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.3; /* 29.9px */
+    letter-spacing: 0.92px;
+    color: var(--gold-color);
+}
+.special-line {
+    width: 119px;
+    height: 1px;
+    margin-right: 32px;
+    margin-left: 32px;
+    background-color: var(--white-color);
+}
+.main__special-price {
+    font-family: "Cormorant Upright";
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.3; /* 29.9px */
+    letter-spacing: 0.92px;
+    color: var(--white-color);
+}
+.main__special-wrapp-bottle {
+}
+.main__specila-bottle {
+}
+.main__special-img {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.special__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.main__special-cocktails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main__special-button {
+}
+@media screen and (max-width: 1399.98px){
+    .special__img {
+        display: none;
+    }
+}
+@media screen and (max-width: 1199.98px){
+    .main__special-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+@media screen and (max-width: 991.98px){
+    .main__special-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .main__special-wrapper {
+        margin-bottom: 20px;
+    }
+    .main__special-title {
+        margin-bottom: 20px;
+    }
+    .main__special-subtitle {
+        margin-bottom: 30px;
+    }
+    .main__special-list {
+        gap: 20px;
+    }
+    .main__special-wrapper {
+        flex-direction: column;
+    }
+    .main__special-cocktails {
+        margin-top: 20px;
+    }
+    .main__special-img {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media screen and (max-width: 767.98px){
+    .main__special-container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 479.98px){
+    .special-line {
+        display: none;
+    }
+}
