@@ -1,13 +1,12 @@
-const playButton = document.querySelector('.video__play');
-const wrapperTitle = document.querySelector(".video__wrapper-title");
-const img = document.querySelector('.video__img');
+const playButton = document.querySelector('.main__video-play');
+const img = document.querySelector('.main__video-img');
 const videoEl = document.querySelector('#video-player')
 
 playButton.addEventListener('click', onHiddenTitle);
 
 function onHiddenTitle (){
     console.log('click');
-    wrapperTitle.classList.add('none')
+    playButton.classList.add('none')
     img.classList.add('none')
 }
 
