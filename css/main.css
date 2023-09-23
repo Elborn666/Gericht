@@ -1030,6 +1030,124 @@ a {
     margin-top: 20px;
   }
 }
+.main__testimony {
+  background-color: var(--bg-color);
+}
+
+.main__testimony-container {
+  position: relative;
+  padding-top: 152px;
+  padding-bottom: 152px;
+}
+.main__testimony-container::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../icon/logo.svg");
+  background-repeat: no-repeat;
+  width: 146px;
+  height: 146px;
+  top: -50px;
+  right: 0px;
+}
+
+.main__testimony-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__testimony-title {
+  margin-bottom: 64px;
+}
+
+.main__testimony-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 32px;
+  row-gap: 64px;
+}
+
+.testimony-item {
+  display: flex;
+  max-width: 634px;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.testimony__wrapper-img {
+  position: relative;
+}
+.testimony__wrapper-img::after {
+  position: absolute;
+  content: "";
+  background-image: url("../icon/quotes.svg");
+  background-repeat: no-repeat;
+  bottom: -12px;
+  right: -15px;
+  width: 47px;
+  height: 40px;
+}
+
+.testimony__comment {
+  margin-bottom: 16px;
+  max-width: 431px;
+}
+
+.testimony__name {
+  font-family: " Cormorant Upright";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.3; /* 41.6px */
+  letter-spacing: 1.28px;
+  color: var(--gold-color);
+}
+
+.testimony__position {
+  color: var(--light-gold-color);
+}
+
+@media screen and (max-width: 991.98px) {
+  .main__testimony-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .main__testimony-title {
+    margin-bottom: 32px;
+  }
+  .main__testimony-list {
+    row-gap: 32px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .main__testimony-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .main__testimony-title {
+    margin-bottom: 20px;
+  }
+  .main__testimony-list {
+    row-gap: 32px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .main__testimony-container::after {
+    display: none;
+  }
+  .testimony-item {
+    flex-direction: column-reverse;
+  }
+  .testimony__wrapper-img::after {
+    display: none;
+  }
+  .main__testimony-wrapper-text {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
 .burger__menu {
   display: none;
 }
