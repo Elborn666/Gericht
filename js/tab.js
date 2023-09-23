@@ -12,6 +12,12 @@ function filter() {
             case 'ronise':
                 getItems(targetId)
                 break
+            case 'egg':
+                getItems(targetId)
+                break
+            case 'meat':
+                getItems(targetId)
+                break
         }
     })
 }
