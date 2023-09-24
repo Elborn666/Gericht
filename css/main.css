@@ -1341,17 +1341,6 @@ a {
   padding-top: 152px;
   padding-bottom: 152px;
 }
-.main__blog-container::after {
-  content: "";
-  position: absolute;
-  display: block;
-  background-image: url("../icon/logo.svg");
-  background-repeat: no-repeat;
-  width: 146px;
-  height: 146px;
-  bottom: 123px;
-  right: -45px;
-}
 
 .main__blog-body {
   display: flex;
@@ -1466,6 +1455,60 @@ a {
     margin-bottom: 20px;
   }
 }
+.main__gallery {
+  display: flex;
+  align-items: center;
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-image: url("../img/about/bg-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__gallery-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 491px;
+  margin-left: 11%;
+}
+
+.main__gallary-contant {
+  flex: 0 0 100%;
+}
+
+.main__gallery-lable {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gallery-lable {
+  align-items: flex-start;
+}
+
+.main__gallery-title {
+  margin-bottom: 24px;
+}
+
+.main__gallery-text {
+  margin-bottom: 24px;
+}
+
+.main__gallery-list {
+  display: flex;
+  flex: 0 0 52%;
+  transform: translate(-100%, 0px);
+  gap: 32px;
+}
+
+.main__gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .burger__menu {
   display: none;
 }

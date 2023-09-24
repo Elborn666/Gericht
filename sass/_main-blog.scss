@@ -5,17 +5,17 @@
     position: relative;
     padding-top: 152px;
     padding-bottom: 152px;
-    &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        background-image: url('../icon/logo.svg');
-        background-repeat: no-repeat;
-        width: 146px;
-        height: 146px;
-        bottom: 123px;
-        right: -45px;
-    }
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     display: block;
+    //     background-image: url('../icon/logo.svg');
+    //     background-repeat: no-repeat;
+    //     width: 146px;
+    //     height: 146px;
+    //     bottom: 123px;
+    //     right: -45px;
+    // }
 }
 .main__blog-body {
     display: flex;
