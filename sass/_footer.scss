@@ -35,6 +35,10 @@
 }
 .footer__contact-link {
     color: var(--general-color);
+    transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: var(--gold-color);
+    }
 }
 .footer__gericht {
     display: flex;
@@ -56,8 +60,13 @@
     gap: 16px;
 }
 .footer__icon {
+    fill: var(--light-gold-color);
     width: 24px;
     height: 24px;
+    transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        fill: var(--gold-color);
+    }
 }
 .footer__time {
     margin-top: 40px;
