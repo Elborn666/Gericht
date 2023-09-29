@@ -1,4 +1,4 @@
-.backdrop__subscribe {
+.backdrop__reserv {
     position: fixed;
     z-index: 60;
     top: 0;
@@ -10,7 +10,7 @@
     opacity: 0;
     pointer-events: none;
 }
-.modal__window-subscribe {
+.modal__window-reserv {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,22 +21,22 @@
     border-radius: 10px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-.modal__subscribe-container {
+.modal__reserv-container {
     padding: 25px;
     max-width: 500px;
     margin: 0 auto;
 }
-.modal__subscribe-body {
+.modal__reserv-body {
     text-align: center;
     border-radius: 10px;
 }
-.modal__subscribe-title {
+.modal__reserv-title {
     margin-bottom: 10px;
 }
-.modal__subscribe-text {
+.modal__reserv-text {
     margin-bottom: 20px;
 }
-.modal__subscribe-button {
+.modal__reserv-button {
 }
 .is-open {
     opacity: 1;

@@ -124,7 +124,7 @@
                     <h2 class="main__reserv-title title">Book A Table</h2>
                     <form class="main__reserv-form">
                         <div class="wrapper-select">
-                            <select class="main__reserv-select">
+                            <select required class="main__reserv-select">
                                 <option value="1 Person">1 Person</option>
                                 <option value="2 Person">2 Person</option>
                                 <option value="3 Person">3 Person</option>
@@ -133,10 +133,10 @@
                                 <option value="6 Person">6 Person</option>
                                 <option value="7 Person">7 Person</option>
                             </select>
-                            <input type="date" value="2017-06-01" class="main__reserv-date">
-                            <input type="time" value="13:30" class="main__reserv-time">
+                            <input type="date" required value="2017-06-01" class="main__reserv-date">
+                            <input type="time" required value="13:30" class="main__reserv-time">
                         </div>
-                        <button class="main__reserv-button button-gold">Book Now</button>
+                        <button type="submit" class="main__reserv-button button-gold">Book Now</button>
                     </form>
                 </div>
             </div>
@@ -573,7 +573,7 @@
                     <h2 class="main__subscribe-title title">Subscribe to Our Newsletter</h2>
                     <h3 class="main__subscribe-subtitle">And never miss latest Updates!</h3>
                     <form class="form__main-subscribe">
-                        <input type="email" placeholder="Email Address" class="main__input">
+                        <input type="email" placeholder="Email Address" required class="main__input">
                         <button class="button__main-subcribe button-gold">Subscribe</button>
                     </form>
                 </div>
@@ -646,11 +646,25 @@
         </div>
     </footer>
 
-    <div class="backdrop">
-        <div class="modal__window">
-            <div class="modal__window-container">
-                <div class="modal__window-body">
+    <div class="backdrop__subscribe">
+        <div class="modal__window-subscribe">
+            <div class="modal__subscribe-container">
+                <div class="modal__subscribe-body">
+                    <h2 class="modal__subscribe-title title">Successfully</h2>
+                    <p class="modal__subscribe-text">The subscription was successful</p>
+                    <button class="modal__subscribe-button button-gold">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="backdrop__reserv">
+        <div class="modal__window-reserv">
+            <div class="modal__reserv-container">
+                <div class="modal__reserv-body">
+                    <h2 class="modal__reserv-title title">Successfully</h2>
+                    <p class="modal__reserv-text">Your table is booked</p>
+                    <button class="modal__reserv-button button-gold">Ok</button>
                 </div>
             </div>
         </div>
@@ -659,6 +673,7 @@
     <script type="module" src="./js/video.js"></script>
     <script type="module" src="./js/tab.js"></script>
     <script type="module" src="./js/subscribe.js"></script>
+    <script type="module" src="./js/reserv.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> SLIDER -->
 </body>
 
