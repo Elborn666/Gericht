@@ -498,6 +498,7 @@ a {
 .main__img {
   position: relative;
   z-index: 10;
+  animation: knive 2s ease-in-out 0s infinite alternate;
 }
 
 .main__about-history {
@@ -572,6 +573,14 @@ a {
 @media screen and (max-width: 399.98px) {
   .main__about-knive::before {
     display: none;
+  }
+}
+@keyframes knive {
+  0% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(25deg);
   }
 }
 .main__reserv {
