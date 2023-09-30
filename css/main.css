@@ -1784,6 +1784,7 @@ a {
   }
 }
 .hero__bar {
+  margin-top: -200px;
   background-image: url("../img/about/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1792,12 +1793,25 @@ a {
 .hero__bar-container {
   padding-top: 36px;
   padding-bottom: 138px;
+  position: relative;
+}
+.hero__bar-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../icon/logo.svg");
+  background-repeat: no-repeat;
+  width: 146px;
+  height: 146px;
+  bottom: -115px;
+  right: 17px;
 }
 
 .hero__bar-body {
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin-top: 170px;
 }
 
 .hero__bar-wrapper {
