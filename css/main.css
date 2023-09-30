@@ -1868,8 +1868,39 @@ a {
   }
 }
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 620px;
+  height: 690px;
+}
+
+.swiper-slide {
+  width: 550px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 5;
+  bottom: -20px;
+  left: -20px;
+  width: 435px;
+  height: 435px;
+  background-color: var(--gold-color);
+}
+.swiper-slide::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 5;
+  top: -20px;
+  right: -20px;
+  width: 435px;
+  height: 435px;
+  background-color: var(--gold-color);
 }
 
 .backdrop__subscribe {
