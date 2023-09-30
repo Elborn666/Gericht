@@ -17,18 +17,18 @@
     background-position: center;
     background-size: cover;
 }
+.burger__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
 .burger__close-icon {
     align-self: flex-end;
     width: 28px;
     height: 28px;
     fill: var(--white-color);
     cursor: pointer;
-}
-.burger__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
 }
 .burger__nav {
     margin-top: 20px;
