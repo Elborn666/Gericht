@@ -125,6 +125,9 @@
     .hero__bar-container {
         padding-top: 20px;
         padding-bottom: 20px;
+        &::after {
+            display: none;
+        }
     }
     .hero__bar-wrapper-img {
         margin-left: 40px;
