@@ -40,6 +40,11 @@
     flex-direction: column;
     gap: 40px;
 }
+.main__special-item {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
+}
 .main__special-wrapp-name {
     display: flex;
     align-items: center;
@@ -131,4 +136,9 @@
     .special-line {
         display: none;
     }
+}
+
+.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }

@@ -43,6 +43,11 @@
     margin-right: 180px;
     max-width: 454px;
 }
+.hero__lable-wrapper {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
+}
 .hero__lable {
     &::after {
         content: "";
@@ -64,9 +69,22 @@
     letter-spacing: 3.6px;
     text-transform: capitalize;
     color: var(--gold-color);
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
 }
 .hero__text {
     margin-bottom: 32px;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
+}
+.button__wrapper {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
 }
 .hero__wrapper-img {
     position: relative;
@@ -185,4 +203,9 @@
     .hero__img {
         margin-top: 20px;
     }
+}
+
+.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }

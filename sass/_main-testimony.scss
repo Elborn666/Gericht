@@ -37,6 +37,10 @@
     max-width: 634px;
     column-gap: 16px;
     align-items: center;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
 }
 .testimony__wrapper-img {
     position: relative;
@@ -109,4 +113,9 @@
         flex-direction: column-reverse;
         text-align: center;
     }
+}
+
+.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }

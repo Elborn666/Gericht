@@ -22,6 +22,11 @@
     max-width: 570px;
     margin-left: 80px;
 }
+.main__chef-lable-wrapper {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
+}
 .main__chef-lable {
     &::after {
         content: "";
@@ -34,9 +39,18 @@
         height: 40px;
     }
 }
+.main__chef-title {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
+}
 .main__chef-text {
     position: relative;
     text-indent: 60px;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
     &::before {
         content: "";
         display: block;
@@ -56,6 +70,15 @@
     line-height: 1.3; /* 41.6px */
     letter-spacing: 1.28px;
     color: var(--gold-color);
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
+}
+.main__chef-position {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
 }
 .main__chef-wrapper-img {
     position: relative;
@@ -88,6 +111,10 @@
 .main__chef-signature {
     width: 235px;
     height: 83px;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
 }
 .main__chef-img {
     position: relative;
@@ -140,4 +167,9 @@
     .main__chef-wrapper-img {
         margin-top: 20px;
     }
+}
+
+.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
