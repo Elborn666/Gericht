@@ -1,8 +1,8 @@
-const openBurgerBtn = document.querySelector('.menu__burger-icon')
-const closedBurgerBtn = document.querySelector('.menu__burger-closed')
-const menuBurger = document.querySelector('.menu__burger')
+const openBurgerBtn = document.querySelector('.burger-icon')
+const closedBurgerBtn = document.querySelector('.burger__close-icon')
+const menuBurger = document.querySelector('.burger__menu')
 const body = document.querySelector('body')
-const eventsClose = document.querySelectorAll('.menu__burger-link')
+const eventsClose = document.querySelectorAll('.burger__link')
 
 openBurgerBtn.addEventListener('click', onOpenBurger)
 closedBurgerBtn.addEventListener('click', onClosedBurger)
