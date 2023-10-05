@@ -1,5 +1,5 @@
-const playButton = document.querySelector('.main__video-play');
-const img = document.querySelector('.main__video-img');
+const playButton = document.querySelector('#video-play');
+const img = document.querySelector('#video-img');
 const videoEl = document.querySelector('#video-player')
 
 playButton.addEventListener('click', onHiddenTitle);

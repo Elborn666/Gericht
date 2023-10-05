@@ -1260,6 +1260,7 @@ a {
 }
 
 .main__video {
+  background-color: var(--bg-color);
   position: relative;
 }
 
@@ -2834,7 +2835,7 @@ a {
   }
 }
 @media screen and (max-width: 1199.98px) {
-  .sabout__history-container {
+  .about__history-container {
     padding-top: 90px;
     padding-bottom: 90px;
   }
@@ -2925,6 +2926,117 @@ a {
   }
   .about__history-statistic-text {
     font-size: 18px;
+  }
+}
+.about__happy {
+  background-color: var(--bg-color);
+}
+
+.about__happy-container {
+  padding-bottom: 152px;
+  position: relative;
+}
+.about__happy-container::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../icon/logo.svg");
+  background-repeat: no-repeat;
+  width: 146px;
+  height: 146px;
+  bottom: -45px;
+  left: 0px;
+}
+.about__happy-container::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url("../icon/logo.svg");
+  background-repeat: no-repeat;
+  width: 146px;
+  height: 146px;
+  top: 0px;
+  right: 0px;
+}
+
+.about__happy-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.about__happy-text {
+  max-width: 824px;
+  margin: 0 auto;
+  margin-bottom: 96px;
+  text-align: center;
+}
+
+.about__happy-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1300px;
+  height: 763px;
+}
+
+.about__happy-video-img {
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__happy-video-play {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+
+.about__happy-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .about__happy-container {
+    padding-bottom: 90px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .about__happy-container {
+    padding-bottom: 60px;
+  }
+  .about__happy-title {
+    margin-bottom: 20px;
+  }
+  .about__happy-text {
+    margin-bottom: 20px;
+  }
+  .about__happy-wrapper {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .about__happy-container {
+    padding-bottom: 20px;
+  }
+  .about__happy-container::after {
+    display: none;
+  }
+  .about__happy-container::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .about__happy-wrapper {
+    display: none;
   }
 }
 .active {
