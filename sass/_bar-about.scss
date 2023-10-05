@@ -42,12 +42,23 @@
 .bar__about-title {
     max-width: 614px;
     margin-bottom: 32px;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
 }
 .bar__about-text {
     max-width: 614px;
     margin-bottom: 32px;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
 }
 .bar__about-buttob {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
     &:hover {
         background-color: inherit;
     }
@@ -105,4 +116,9 @@
     .bar__about-contant-img {
         height: 185px;
     }
+}
+
+.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }

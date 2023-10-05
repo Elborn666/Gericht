@@ -72,6 +72,10 @@
     letter-spacing: 9.05px;
     text-transform: capitalize;
     color: var(--white-color);
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
 }
 .hero__bar-img {
     position: relative;
@@ -149,4 +153,9 @@
     .hero__bar-title {
         margin-left: 20px;
     }
+}
+
+.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }

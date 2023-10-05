@@ -1867,6 +1867,9 @@ a {
   letter-spacing: 9.05px;
   text-transform: capitalize;
   color: var(--white-color);
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .hero__bar-img {
@@ -1949,6 +1952,11 @@ a {
     margin-left: 20px;
   }
 }
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .bar__about {
   background-image: url("../img/about/bg-img.jpg");
   background-repeat: no-repeat;
@@ -1999,13 +2007,24 @@ a {
 .bar__about-title {
   max-width: 614px;
   margin-bottom: 32px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .bar__about-text {
   max-width: 614px;
   margin-bottom: 32px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
+.bar__about-buttob {
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
+}
 .bar__about-buttob:hover {
   background-color: inherit;
 }
@@ -2064,6 +2083,11 @@ a {
     height: 185px;
   }
 }
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .bar__poison {
   background-color: var(--bg-color);
 }
@@ -2267,6 +2291,9 @@ a {
 
 .bar__contact-lable {
   display: flex;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .bar-lable {
@@ -2275,11 +2302,17 @@ a {
 
 .bar__contact-title {
   margin-bottom: 64px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .bar__contact-link-street {
+  display: block;
   color: var(--general-color);
-  transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 .bar__contact-link-street:hover {
   color: var(--gold-color);
@@ -2295,6 +2328,9 @@ a {
   letter-spacing: 0.92px;
   text-transform: capitalize;
   color: var(--gold-color);
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .bar__contact-list {
@@ -2306,6 +2342,9 @@ a {
 
 .bar__contact-text {
   color: var(--white-color);
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .bar__contact-wrapper-img {
@@ -2342,6 +2381,12 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.bar__contact-button {
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -2391,6 +2436,11 @@ a {
     margin-bottom: 20px;
   }
 }
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .burger__menu {
   display: none;
 }
