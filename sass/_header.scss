@@ -1,6 +1,11 @@
 .header {
     background-color: var(--bg-color);
 }
+.bar__header {
+    background-image: url("../img/about/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .header__body {
     display: flex;
     align-items: center;
