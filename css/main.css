@@ -1958,6 +1958,17 @@ a {
   padding-top: 128px;
   padding-bottom: 79px;
 }
+.bar__about-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../icon/logo.svg");
+  background-repeat: no-repeat;
+  width: 146px;
+  height: 146px;
+  top: 0px;
+  left: 0px;
+}
 
 .bar__about-body {
   display: flex;
@@ -2022,6 +2033,9 @@ a {
   .bar__about-container {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .bar__about-container::before {
+    display: none;
   }
   .bar__about-contant-img {
     width: 100%;
