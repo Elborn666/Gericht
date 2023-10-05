@@ -17,11 +17,19 @@
     font-size: 128px;
     letter-spacing: 3.84px;
     text-transform: capitalize;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
 }
 .bar__happy-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
 }
 .bar__happy-text {
     font-family: "Cormorant Upright";
@@ -45,4 +53,9 @@
         font-size: 54px;
         margin-bottom: 20px;
     }
+}
+
+.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }

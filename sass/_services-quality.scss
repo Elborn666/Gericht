@@ -22,19 +22,36 @@
     flex-direction: column;
     align-items: center;
 }
+.services__quality-lable {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
+}
 .services__quality-title {
     margin-bottom: 40px;
     max-width: 1128px;
     text-align: center;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
 }
 .services__quality-text {
     margin-bottom: 40px;
     max-width: 868px;
     text-align: center;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
 }
 .services__quality-list {
     display: flex;
     gap: 40px;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
 }
 .services__quality-button-inherit {
     cursor: pointer;
@@ -78,4 +95,9 @@
     .services__quality-list {
        flex-direction: column;
     }
+}
+
+.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }

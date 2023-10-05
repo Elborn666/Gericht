@@ -15,9 +15,17 @@
 }
 .services__hero-title {
     margin-bottom: 24px;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
 }
 .services__hero-list {
     display: flex;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 1s;
 }
 .services__hero-item {
     display: flex;
@@ -43,4 +51,9 @@
         padding-top: 200px;
         padding-bottom: 200px;
     }
+}
+
+.active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
