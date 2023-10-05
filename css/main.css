@@ -199,6 +199,7 @@ a {
 }
 
 .header__line {
+  display: block;
   width: 1px;
   height: 57px;
   background-color: var(--white-color);
@@ -2707,6 +2708,223 @@ a {
   .about__hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+.about__history {
+  background-color: var(--bg-color);
+}
+
+.about__history-container {
+  padding-top: 152px;
+  padding-bottom: 152px;
+}
+
+.about__history-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-lable {
+  align-items: flex-start;
+  font-family: "Cormorant Upright";
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.3; /* 58.5px */
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  color: var(--gold-color);
+}
+
+.about__history-title {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.about__history-wrapper {
+  display: flex;
+}
+
+.about__history-wrapper-trattoria {
+  width: 50%;
+  margin-right: 143px;
+}
+
+.about__history-text {
+  max-width: 523px;
+  margin-bottom: 40px;
+}
+
+.about__history-trattoria-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.about__history-wrapper-years {
+  width: 50%;
+}
+
+.about__history-years-img {
+  margin-bottom: 40px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.about__history-subtitle {
+  margin-bottom: 40px;
+  font-family: "Cormorant Upright";
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.3; /* 58.5px */
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  color: var(--gold-color);
+}
+
+.about__history-list {
+  display: flex;
+  gap: 64px;
+}
+
+.about__history-item {
+  display: flex;
+  gap: 64px;
+}
+
+.about__history-statistic-text {
+  max-width: 120px;
+  font-family: "Cormorant Upright";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.3; /* 41.6px */
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+  color: var(--white-color);
+}
+
+.history__line {
+  display: block;
+  align-self: center;
+  width: 1px;
+  height: 100px;
+  background-color: var(--white-color);
+}
+
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+@media screen and (max-width: 1299.98px) {
+  .about__history-wrapper-trattoria {
+    margin-right: 60px;
+  }
+  .about__history-list {
+    gap: 32px;
+  }
+  .about__history-item {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .sabout__history-container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .about__history-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .history-lable {
+    font-size: 32px;
+  }
+  .about__history-title {
+    margin-bottom: 40px;
+  }
+  .about__history-text {
+    margin-bottom: 20px;
+  }
+  .about__history-years-img {
+    margin-bottom: 20px;
+  }
+  .about__history-subtitle {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  .about__history-list {
+    gap: 16px;
+  }
+  .about__history-item {
+    gap: 16px;
+  }
+  .about__history-statistic-text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .about__history-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .about__history-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__history-title {
+    margin-bottom: 20px;
+  }
+  .about__history-wrapper-trattoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .about__history-wrapper-years {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .history-lable {
+    align-items: center;
+  }
+  .about__history-years-img {
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  .about__history-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__history-wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__history-statistic-text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .about__history-list {
+    gap: 10px;
+  }
+  .about__history-item {
+    gap: 10px;
+  }
+  .about__history-statistic-text {
+    font-size: 18px;
   }
 }
 .active {
