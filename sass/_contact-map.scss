@@ -1,0 +1,40 @@
+.contact__map {
+    background-color: var(--bg-color);
+}
+.contact__map-container {
+    padding-top: 152px;
+    padding-bottom: 152px;
+}
+.contact__map-body {
+    max-width: 1300px;
+    height: auto;
+    border: 2px solid var(--gold-color);
+    margin: 0 auto;
+}
+.contact__map-map {
+    display: block;
+    filter: grayscale(100%); 
+}
+.iframe {
+    width: 1300px;
+    height: 500px;
+    object-fit: contain;
+}
+@media screen and (max-width: 1199.98px){
+    .contact__map-container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+@media screen and (max-width: 991.98px){
+    .contact__map-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+@media screen and (max-width: 767.98px){
+    .contact__map-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
