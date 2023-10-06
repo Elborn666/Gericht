@@ -2731,6 +2731,12 @@ a {
   align-items: center;
 }
 
+.about__history-lable {
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
+}
+
 .history-lable {
   align-items: flex-start;
   font-family: "Cormorant Upright";
@@ -2745,6 +2751,9 @@ a {
 .about__history-title {
   margin-bottom: 64px;
   text-align: center;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .about__history-wrapper {
@@ -2759,6 +2768,9 @@ a {
 .about__history-text {
   max-width: 523px;
   margin-bottom: 40px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .about__history-trattoria-img {
@@ -2787,6 +2799,9 @@ a {
   letter-spacing: 1.8px;
   text-transform: capitalize;
   color: var(--gold-color);
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .about__history-list {
@@ -2797,6 +2812,9 @@ a {
 .about__history-item {
   display: flex;
   gap: 64px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .about__history-statistic-text {
@@ -2816,11 +2834,6 @@ a {
   width: 1px;
   height: 100px;
   background-color: var(--white-color);
-}
-
-.active {
-  transform: translate(0px, 0px);
-  opacity: 1;
 }
 
 @media screen and (max-width: 1299.98px) {
@@ -2928,6 +2941,11 @@ a {
     font-size: 18px;
   }
 }
+.active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .about__happy {
   background-color: var(--bg-color);
 }
@@ -2959,9 +2977,18 @@ a {
   right: 0px;
 }
 
+.about__happy-lable {
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
+}
+
 .about__happy-title {
   margin-bottom: 32px;
   text-align: center;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .about__happy-text {
@@ -2969,6 +2996,9 @@ a {
   margin: 0 auto;
   margin-bottom: 96px;
   text-align: center;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 
 .about__happy-wrapper {

@@ -27,15 +27,28 @@
         right: 0px;
     }
 }
+.about__happy-lable {
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
+}
 .about__happy-title {
     margin-bottom: 32px;
     text-align: center;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
 }
 .about__happy-text {
     max-width: 824px;
     margin: 0 auto;
     margin-bottom: 96px;
     text-align: center;
+
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 2.5s ease 0.5s;
 }
 .about__happy-wrapper {
     position: relative;
