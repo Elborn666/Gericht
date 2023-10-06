@@ -55,10 +55,12 @@
     transform: translate(0px, 120%);
     transition: all 2.5s ease 0.5s;
 }
-.bar__about-buttob {
+.bar__about-link {
     opacity: 0;
     transform: translate(0px, 120%);
     transition: all 2.5s ease 0.5s;
+}
+.bar__about-button {
     &:hover {
         background-color: inherit;
     }
