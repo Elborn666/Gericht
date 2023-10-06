@@ -1,23 +1,24 @@
+const backdrop = document.querySelector('.backdrop__form')
 const body = document.querySelector('body')
-const form = document.querySelector('.form__booking-form')
-const modalSubmit = document.querySelector('.backdrop__submit')
-const closeBtn = document.querySelector('.modal__submit-button-close')
+const subscribeForm = document.querySelector('.contact__form-form')
+const buttonCloseModal = document.querySelector('.modal__form-button')
 
-form.addEventListener('submit', onSubmitForm)
-closeBtn.addEventListener('click', onCloseModal)
 
-function onSubmitForm(e) {
-    e.preventDefault()
+buttonCloseModal.addEventListener('click', onBtnClose)
+subscribeForm.addEventListener('submit', onSubmitForm)
+
+function onSubmitForm (e) {
+    e.preventDefault();
     e.currentTarget.reset()
-    modalForm()
+    buttonSubscribeSuccess ()
 }
 
-function modalForm() {
-    modalSubmit.classList.add('is-open')
+function buttonSubscribeSuccess () {
+    backdrop.classList.add('is-open')
     body.classList.add('hidden')
 }
 
-function onCloseModal() {
-    modalSubmit.classList.remove('is-open')
+function onBtnClose () {
+    backdrop.classList.remove('is-open')
     body.classList.remove('hidden')
 }
