@@ -2679,6 +2679,8 @@ a {
 
 .about__hero-list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   opacity: 0;
   transform: translate(0px, 120%);
   transition: all 2.5s ease 1s;
