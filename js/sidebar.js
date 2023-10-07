@@ -9,7 +9,6 @@ closedSidebarBtn.addEventListener('click', onClosedSidebar)
 function onOpenSidebar (){
     menuSidebar.classList.add('active__sidebar')
     body.classList.add('hidden')
-    console.log('click');
 }
 
 function onClosedSidebar (){
