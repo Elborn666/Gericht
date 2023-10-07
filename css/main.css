@@ -3408,6 +3408,19 @@ a {
 .chef__container {
   padding-top: 128px;
   padding-bottom: 128px;
+  position: relative;
+}
+.chef__container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../icon/logo.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+  width: 146px;
+  height: 146px;
+  bottom: 0px;
+  right: 0px;
 }
 
 .chef__body {
@@ -3425,7 +3438,7 @@ a {
   margin-left: 80px;
 }
 
-.chef__lable-wrapper {
+.main__chef-lable {
   opacity: 0;
   transform: translate(0px, 120%);
   transition: all 2.5s ease 0.5s;
@@ -3467,6 +3480,9 @@ a {
 .chef__achievement-item {
   position: relative;
   margin-left: 30px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 2.5s ease 0.5s;
 }
 .chef__achievement-item::before {
   content: "";
@@ -3522,15 +3538,19 @@ a {
     margin-left: 40px;
   }
 }
-@media screen and (max-width: 1199.98px) {
-  .chef__contant {
-    gap: 20px;
-  }
-}
 @media screen and (max-width: 991.98px) {
   .chef__container {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .chef__title {
+    margin-bottom: 20px;
+  }
+  .chef__text {
+    margin-bottom: 20px;
+  }
+  .chef__achievement-list {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 767.98px) {
