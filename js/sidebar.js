@@ -7,12 +7,13 @@ openSidebarBtn.addEventListener('click', onOpenSidebar)
 closedSidebarBtn.addEventListener('click', onClosedSidebar)
 
 function onOpenSidebar (){
-    menuSidebar.classList.add('active__burger')
+    menuSidebar.classList.add('active__sidebar')
     body.classList.add('hidden')
+    console.log('click');
 }
 
 function onClosedSidebar (){
-    menuSidebar.classList.remove('active__burger')
+    menuSidebar.classList.remove('active__sidebar')
     body.classList.remove('hidden')
 }
 

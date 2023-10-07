@@ -32,7 +32,7 @@
 .blog__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 32px;
     margin-bottom: 64px;
 }
@@ -91,14 +91,15 @@
         text-decoration: underline;
     }
 }
-//===========================  SIDEBAR  =========================================//
-.sidebar {
+.blog__button-wrapper {
+    display: flex;
+    justify-content: center;
 }
+//===========================  SIDEBAR  =========================================//
 .sidebar__container {
     display: flex;
     flex-direction: column;
     width: 375px;
-    margin-left: 69px;
 }
 .sidebar__search,
 .sidebar__categories,
@@ -108,6 +109,9 @@
     padding: 32px;
     margin-bottom: 32px;
     background-color: var(--bg-grey-color);
+}
+.sidebar__share {
+    margin-bottom: 0px;
 }
 .sidebar__title {
     margin-bottom: 32px;
@@ -147,8 +151,6 @@
     letter-spacing: 0.64px;
     color: var(--light-gold-color);
 }
-.sidebar__categories {
-}
 .sidebar__list {
     display: flex;
     flex-direction: column;
@@ -168,14 +170,8 @@
     margin: 0px 15px;
     background-color: var(--light-gold-color);
 }
-.sidebar__number {
-}
-.sidebar__post {
-}
 .sidebar__post-item {
     max-width: 324px;
-}
-.sidebar__post-link {
 }
 .sidebar__post-wrapper-img {
     margin-bottom: 24px;
@@ -192,8 +188,6 @@
         transform: scale(1.1);
     }
 }
-.sidebar__post-thumb {
-}
 .sidebar__post-wrapper-date {
     display: flex;
     justify-content: space-between;
@@ -202,8 +196,6 @@
 .sidebar__post-date,
 .sidebar__post-name {
     color: var(--white-color);
-}
-.sidebar__post-wrapper-text {
 }
 .sidebar__post-subtitle {
     margin-bottom: 32px;
@@ -234,16 +226,12 @@
         text-decoration: underline;
     }
 }
-.sidebar__tag {
-}
 .sidebar__tag-list {
     display: flex;
 }
 .sidebar__tag-item {
     display: flex;
     align-items: center;
-}
-.sidebar__tag-text {
 }
 .sidebar__tag-line {
     display: block;
@@ -252,15 +240,9 @@
     background-color: var(--gold-color);
     margin: 0px 8px;
 }
-.sidebar__share {
-}
 .sidebar__social-list {
     display: flex;
     gap: 16px;
-}
-.sidebar__social-item {
-}
-.sidebar__social-link {
 }
 .sidebar__social-icon {
     width: 24px;
@@ -275,6 +257,9 @@
     .blog__list {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .sidebar__container {
+        margin-left: 20px;
     }
 }
 @media screen and (max-width: 991.98px){
@@ -330,6 +315,9 @@
     }
     .sidebar {
         display: none;
+    }
+    .sidebar__container {
+        margin-left: 0px;
     }
 }
 @media screen and (max-width: 479.98px){
