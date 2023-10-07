@@ -46,8 +46,6 @@
     //     box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.2);
     // }
 }
-.chef__achivements-wrapper-img {
-}
 .chef__achivements-image {
     display: block;
     width: 100%;
@@ -109,9 +107,6 @@
         justify-content: center;
     }
 }
-@media screen and (max-width: 889.98px){
-    
-}
 @media screen and (max-width: 767.98px){
     .chef__achivements-container {
         padding-top: 20px;
@@ -123,7 +118,4 @@
     .chef__achivements-list {
         row-gap: 20px;
     }
-}
-@media screen and (max-width: 479.98px){
-    
 }
