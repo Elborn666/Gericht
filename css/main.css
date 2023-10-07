@@ -3553,6 +3553,11 @@ a {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 909.98px) {
+  .chef__container::before {
+    display: none;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .chef__container {
     padding-top: 20px;
@@ -3579,6 +3584,136 @@ a {
   opacity: 1;
 }
 
+.chef__achivements {
+  background-image: url("../img/about/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.chef__achivements-container {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.chef__achivements-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chef__achivements-contant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin-right: 111px;
+}
+
+.chef__achivements-lable {
+  display: flex;
+}
+
+.award-lable {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chef__achivements-title {
+  margin-bottom: 64px;
+}
+
+.chef__achivements-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 64px;
+  column-gap: 32px;
+}
+
+.chef__achivements-item {
+  display: flex;
+  column-gap: 32px;
+  width: 310px;
+}
+
+.chef__achivements-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: 1px solid var(--gold-color);
+}
+
+.chef__achivements-subtitle {
+  margin-bottom: 8px;
+  font-family: "Cormorant Upright";
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.3; /* 29.9px */
+  letter-spacing: 0.92px;
+  color: var(--gold-color);
+}
+
+.img-two {
+  display: none;
+}
+
+.img-three {
+  display: none;
+}
+
+.img-four {
+  display: none;
+}
+
+@media screen and (max-width: 1669.98px) {
+  .chef__achivements-contant {
+    margin-right: 40px;
+  }
+  .chef__achivements-title {
+    margin-bottom: 32px;
+  }
+  .chef__achivements-list {
+    row-gap: 32px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .chef__achivements-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .chef__achivements-body {
+    flex-direction: column;
+    align-items: center;
+  }
+  .chef__achivements-contant {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .chef__achivements-title {
+    text-align: center;
+  }
+  .award-lable {
+    align-items: center;
+  }
+  .chef__achivements-list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .chef__achivements-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .chef__achivements-title {
+    margin-bottom: 20px;
+  }
+  .chef__achivements-list {
+    row-gap: 20px;
+  }
+}
 .burger__menu {
   display: none;
 }
