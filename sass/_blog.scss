@@ -14,8 +14,8 @@
         background-repeat: no-repeat;
         width: 146px;
         height: 146px;
-        bottom: 123px;
-        right: 0px;
+        bottom: 0px;
+        left: 0px;
     }
 }
 .blog__body {
@@ -266,6 +266,9 @@
     .blog__container {
         padding-top: 60px;
         padding-bottom: 60px;
+        &::after {
+            display: none;
+        }
     }
     .blog__title {
         margin-bottom: 32px;
