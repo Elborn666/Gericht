@@ -394,7 +394,23 @@
             <section class="blog__post">
                 <div class="blog__post-container container">
                     <div class="blog__post-body">
-
+                        <h2 class="blog__post-title">Post a Comment</h2>
+                        <form class="blog__post-form">
+                            <textarea name="message" class="blog__post-msg"
+                                placeholder="Hello There, My message..."></textarea>
+                            <div class="blog__post-wrapper-input">
+                                <input type="text" class="blog__post-name" placeholder="First Name" required>
+                                <input type="text" class="blog__post-lastname" placeholder="Last Name" required>
+                            </div>
+                            <label for="checkbox" class="blog__post-label-checkbox">
+                                <input type="checkbox" id="checkbox" class="blog__post-checkbox" required>
+                                <span class="custom-checkbox"></span>
+                                Save my name and email in this browser for the next time I comment.
+                            </label>
+                            <div class="blog__post-wrapper-button">
+                                <button class="blog__post-button button-gold">Submit</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </section>
