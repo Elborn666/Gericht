@@ -83,9 +83,6 @@
 .blog__post-checkbox:checked + .custom-checkbox::before {
     transform: translate(-50%, -50%) scale(1);
 }
-.blog__post-button {
-}
-
 @media screen and (max-width: 767.98px){
     .blog__post-title {
         margin-bottom: 20px;
