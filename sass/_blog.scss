@@ -262,6 +262,12 @@
         margin-left: 20px;
     }
 }
+@media screen and (max-width: 1199.98px){
+    .blog__container {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
 @media screen and (max-width: 991.98px){
     .blog__container {
         padding-top: 60px;
