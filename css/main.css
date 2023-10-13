@@ -460,7 +460,7 @@ a {
 }
 
 .main__about {
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -734,7 +734,7 @@ a {
   }
 }
 .main__menu {
-  background-image: url("../img/menu/menu.jpg");
+  background-image: url("../img/menu/menu.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -940,7 +940,7 @@ a {
 }
 
 .main__chef {
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1289,7 +1289,7 @@ a {
   }
 }
 .main__award {
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1618,7 +1618,7 @@ a {
   align-items: center;
   padding-top: 128px;
   padding-bottom: 128px;
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1818,7 +1818,7 @@ a {
   }
 }
 .hero__bar {
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1986,7 +1986,7 @@ a {
 }
 
 .bar__about {
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2222,7 +2222,7 @@ a {
   }
 }
 .bar__happy {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/happyhours/bg-foto.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/happyhours/bg-foto.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2286,7 +2286,7 @@ a {
 }
 
 .bar__contact {
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2482,7 +2482,7 @@ a {
 }
 
 .services__hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/hero/hero-about.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/hero/hero-about.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2655,7 +2655,7 @@ a {
 }
 
 .about__hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/hero/hero-about.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/hero/hero-about.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3127,7 +3127,7 @@ a {
   }
 }
 .contact__form {
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3587,7 +3587,7 @@ a {
 }
 
 .chef__achivements {
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -4675,7 +4675,7 @@ a {
 }
 
 .footer {
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
