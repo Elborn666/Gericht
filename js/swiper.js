@@ -9,10 +9,10 @@ const swiper = new Swiper('.swiper', {
   },
 
   // // If we need pagination
-  pagination: {
-    el: '.hero__pagination',
-    clickable: true,
-  },
+  // pagination: {
+  //   el: '.hero__pagination',
+  //   clickable: true,
+  // },
 
   spaceBetween: 150,
 
