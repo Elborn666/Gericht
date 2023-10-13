@@ -7,12 +7,12 @@ tabsBtn.forEach(function(item) {
         let tabId = currentBtn.getAttribute("data-id");
         let currentTab = document.querySelector(tabId);
 
-        if(!currentBtn.classList.contains('active')) {
+        if(!currentBtn.classList.contains('visible')) {
             tabItems.forEach(function(item) {
-                item.classList.remove('active')
+                item.classList.remove('visible')
             })
     
-            currentTab.classList.add('active')
+            currentTab.classList.add('visible')
 
         }
     });
