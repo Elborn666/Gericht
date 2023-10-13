@@ -280,6 +280,34 @@
         </div>
     </div>
 
+    <div class="backdrop__book">
+        <div class="modal__book-container">
+            <div class="modal__book-body">
+                <svg class='book__icon-close'>
+                    <use href='./icon/sprite.svg#icon-cross'></use>
+                </svg>
+                <h2 class="book__title title">Book a table</h2>
+                <form class="book__form">
+                    <div class="book__wrapper-select">
+                        <select required class="modal__book-select">
+                            <option value="">1 Person</option>
+                            <option value="2 Person">2 Person</option>
+                            <option value="3 Person">3 Person</option>
+                            <option value="4 Person">4 Person</option>
+                            <option value="5 Person">5 Person</option>
+                            <option value="6 Person">6 Person</option>
+                            <option value="7 Person">7 Person</option>
+                        </select>
+                        <input type="date" required value="2017-06-01" class="modal__book-date">
+                        <input type="time" required value="13:30" class="modal__book-time">
+                    </div>
+                    <button type="submit" class="modal__book-button button-gold">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="./js/bookTable.js"></script>
     <script type="module" src="./js/subscribe.js"></script>
     <script type="module" src="./js/reserv.js"></script>
     <script type="module" src="./js/burger-menu.js"></script>

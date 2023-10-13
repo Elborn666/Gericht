@@ -24,8 +24,7 @@
     justify-content: center;
 
     width: 700px;
-    height: 700px;
-    overflow: auto;
+    height: 550px;
     padding: 40px 15px 40px 15px;
 
     background-image: url('../img/about/bg-img.jpg');
@@ -85,7 +84,37 @@
 .modal__book-button {
     margin-top: 64px;
 }
-
+@media screen and (max-width: 767.98px){
+    .modal__book-container {    
+        width: 400px;
+    }
+    .book__icon-close {
+        top: 20px;
+    }
+    .modal__book-select,
+    .modal__book-date,
+    .modal__book-time {
+        width: 320px;
+    }
+}
+@media screen and (max-width: 479.98px){
+    .modal__book-container {
+        width: 300px;
+        height: 450px;
+        padding: 20px 10px 20px 10px;
+    }
+    .book__wrapper-select {
+        gap: 16px;
+    }
+    .modal__book-select,
+    .modal__book-date,
+    .modal__book-time {
+        width: 260px;
+    }
+    .modal__book-button {
+        margin-top: 16px;
+    }
+}
 .active__book {
     opacity: 1;
     pointer-events: fill;
