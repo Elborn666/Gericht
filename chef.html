@@ -29,11 +29,11 @@
                     </ul>
                 </nav>
                 <div class="header__wrapper">
-                    <div class="header__login">
+                    <div class="header__login" id="login">
                         <p class="header__text">Log in / Registration</p>
                     </div>
                     <span class="header__line"></span>
-                    <div class="header__booking">
+                    <div class="header__booking" id="booking">
                         <p class="header__text">Book Table</p>
                     </div>
                 </div>
@@ -61,11 +61,11 @@
                                 </ul>
                             </nav>
                             <div class="burger__wrapper">
-                                <div class="burger__login">
+                                <div class="burger__login" id="login">
                                     <p class="burger__text">Log in / Registration</p>
                                 </div>
                                 <span class="burger__line"></span>
-                                <div class="burger__booking">
+                                <div class="burger__booking" id="booking">
                                     <p class="burger__text">Book Table</p>
                                 </div>
                             </div>
@@ -331,7 +331,24 @@
         </div>
     </div>
 
+    <div class="backdrop__login">
+        <div class="modal__login-container">
+            <div class="modal__login-body">
+                <svg class='login__icon-close'>
+                    <use href='./icon/sprite.svg#icon-cross'></use>
+                </svg>
+                <h2 class="login__title title">Log in to the control panel</h2>
+                <form class="login__form">
+                    <input type="email" class="login__email" placeholder="Enter your Email" required>
+                    <input type="password" class="login__password" placeholder="Enter your password" required>
+                    <button type="submit" class="login__button button-gold">Enter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script type="module" src="./js/bookTable.js"></script>
+    <script type="module" src="./js/login.js"></script>
     <script type="module" src="./js/video.js"></script>
     <!-- <script type="module" src="./js/tab.js"></script> -->
     <script type="module" src="./js/subscribe.js"></script>

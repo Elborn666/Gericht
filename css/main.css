@@ -4948,8 +4948,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 550px;
   overflow: auto;
   padding: 40px 15px 40px 15px;
   background-image: url("../img/about/bg-img.jpg");
@@ -5008,10 +5008,35 @@ a {
   cursor: pointer;
 }
 
-.login__button {
-  margin-top: 64px;
+@media screen and (max-width: 767.98px) {
+  .modal__login-container {
+    width: 400px;
+  }
+  .login__icon-close {
+    top: 20px;
+  }
+  .login__email,
+.login__password {
+    width: 320px;
+  }
 }
-
+@media screen and (max-width: 479.98px) {
+  .modal__login-container {
+    width: 300px;
+    height: 450px;
+    padding: 20px 10px 20px 10px;
+  }
+  .login__wrapper-select {
+    gap: 16px;
+  }
+  .login__email,
+.login__password {
+    width: 260px;
+  }
+  .modal__login-button {
+    margin-top: 16px;
+  }
+}
 .active__book {
   opacity: 1;
   pointer-events: fill;

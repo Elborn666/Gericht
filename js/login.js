@@ -1,11 +1,13 @@
-const openLoginBtn = document.querySelector('.header__login')
+const openLoginBtn = document.querySelectorAll('#login')
 const closedLoginBtn = document.querySelector('.login__icon-close')
 const menuLogin = document.querySelector('.backdrop__login')
 const body = document.querySelector('body')
 
-
-openLoginBtn.addEventListener('click', onOpenLogin)
 closedLoginBtn.addEventListener('click', onClosedLogin)
+
+for (let openLogin of openLoginBtn) {
+    openLogin.addEventListener('click', onOpenLogin);
+}
 
 function onOpenLogin (){
     menuLogin.classList.add('active__book')
