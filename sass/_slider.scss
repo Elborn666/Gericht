@@ -2,9 +2,14 @@
     width: 620px;
     height: 690px;
 }
+.swiper-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
 .swiper-slide {
-    width: 550px;
-    height: 600px;
+    width: 620px;
+    height: 690px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -30,6 +35,31 @@
         width: 435px;
         height: 435px;
         background-color: var(--gold-color);
+    }
+}
+@media screen and (max-width: 1199.98px){
+    .swiper-slide {
+        &::after{
+            display: none;
+        }
+        &::before {
+           display: none;
+        }
+    }
+    .swiper {
+        width: 420px;
+        height: 490px;
+    }
+}
+@media screen and (max-width: 767.98px){
+    .swiper {
+       margin-top: 20px;
+    }
+}
+@media screen and (max-width: 479.98px){
+    .swiper {
+        width: 280px;
+        height: 390px;
     }
 }
 

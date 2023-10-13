@@ -380,8 +380,8 @@ a {
 .hero__img {
   position: relative;
   z-index: 10;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 600px;
+  max-height: 640px;
   object-fit: cover;
 }
 
@@ -390,20 +390,6 @@ a {
   justify-content: center;
   margin-top: 84px;
   gap: 8px;
-}
-
-.hero__number {
-  font-family: "Cormorant Upright";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.75; /* 28px */
-  letter-spacing: 0.64px;
-  color: var(--white-color);
-  cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero__number:hover {
-  color: var(--gold-color);
 }
 
 @media screen and (max-width: 1499.98px) {
@@ -5061,9 +5047,15 @@ a {
   height: 690px;
 }
 
+.swiper-wrapper {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 .swiper-slide {
-  width: 550px;
-  height: 600px;
+  width: 620px;
+  height: 690px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -5092,6 +5084,29 @@ a {
   background-color: var(--gold-color);
 }
 
+@media screen and (max-width: 1199.98px) {
+  .swiper-slide::after {
+    display: none;
+  }
+  .swiper-slide::before {
+    display: none;
+  }
+  .swiper {
+    width: 420px;
+    height: 490px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .swiper {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .swiper {
+    width: 280px;
+    height: 390px;
+  }
+}
 .backdrop__subscribe {
   position: fixed;
   z-index: 60;
