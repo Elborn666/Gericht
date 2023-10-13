@@ -1349,16 +1349,27 @@ a {
 
 .main__award-item {
   display: flex;
+  padding: 10px;
   column-gap: 32px;
   width: 310px;
+  border-radius: 20px;
+  color: var(--general-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.main__award-item:hover {
+  box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.2);
 }
 
 .main__award-wrapper-img {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .main__award-icon {
   position: absolute;
+  z-index: 20;
   bottom: 0px;
   left: -65px;
   width: 360px;
@@ -1368,9 +1379,12 @@ a {
 }
 
 .main__award-image {
+  position: relative;
+  z-index: 10;
   width: 100%;
   height: 100%;
   object-fit: contain;
+  display: none;
 }
 
 .main__award-subtitle {
@@ -1383,18 +1397,14 @@ a {
   color: var(--gold-color);
 }
 
-.img-two {
-  display: none;
+@media screen and (max-width: 1654.98px) {
+  .main__award-title {
+    margin-bottom: 30px;
+  }
+  .main__award-list {
+    row-gap: 10px;
+  }
 }
-
-.img-three {
-  display: none;
-}
-
-.img-four {
-  display: none;
-}
-
 @media screen and (max-width: 1609.98px) {
   .main__award-title {
     margin-bottom: 32px;
@@ -1447,6 +1457,10 @@ a {
     display: none;
   }
 }
+.active {
+  display: block;
+}
+
 .main__blog {
   background-color: var(--bg-color);
 }

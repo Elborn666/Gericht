@@ -1,38 +1,21 @@
-const listBtn = document.querySelector('.main__award-list')
-const itemBtn = document.querySelectorAll('.main__award-item-img')
+const tabsBtn = document.querySelectorAll('.main__award-item');
+const tabItems = document.querySelectorAll('.main__award-image');
 
-function filter() {
-    listBtn.addEventListener('click', e => {
-        const targetId = e.target.dataset.id
+tabsBtn.forEach(function(item) {
+    item.addEventListener("click", function () {
+        let currentBtn = item;
+        let tabId = currentBtn.getAttribute("data-id");
+        let currentTab = document.querySelector(tabId);
 
-        switch (targetId) {
-            case 'mgg':
-                getItems(targetId)
-                break
-            case 'ronise':
-                getItems(targetId)
-                break
-            case 'egg':
-                getItems(targetId)
-                break
-            case 'meat':
-                getItems(targetId)
-                break
+        if(!currentBtn.classList.contains('active')) {
+            tabItems.forEach(function(item) {
+                item.classList.remove('active')
+            })
+    
+            currentTab.classList.add('active')
+
         }
-    })
-}
+    });
+});
 
-filter()
-
-function getItems(className) {
-    itemBtn.forEach(item => {
-        if(item.classList.contains(className)) {
-            item.style.display = 'block'
-        } else {
-            item.style.display = 'none'
-        }
-    })
-}
-
-// data-id="" додається до HTML кнопок
-// те що ми фільтруємо, додається в клас загально прийнята назва
+document.querySelector('.main__award-item').click();
