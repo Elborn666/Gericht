@@ -698,6 +698,7 @@ a {
   color: var(--general-color);
   border: 1px solid var(--light-gold-color);
   background-color: inherit;
+  cursor: pointer;
 }
 
 .main__reserv-button {
@@ -4804,6 +4805,98 @@ a {
     margin-top: 40px;
   }
 }
+.backdrop__book {
+  position: fixed;
+  z-index: 60;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(46, 47, 66, 0.7);
+  opacity: 0;
+  transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.modal__book-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 700px;
+  height: 700px;
+  overflow: auto;
+  padding: 40px 15px 40px 15px;
+  background-image: url("../img/about/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid var(--gold-color);
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+
+.modal__book-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.book__icon-close {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.book__icon-close:hover {
+  fill: var(--gold-color);
+}
+
+.book__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book__wrapper-select {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.modal__book-select,
+.modal__book-date,
+.modal__book-time {
+  padding: 16px;
+  width: 412px;
+  height: 60px;
+  font-family: " Cormorant Upright";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.75; /* 28px */
+  letter-spacing: 0.64px;
+  color: var(--general-color);
+  border: 1px solid var(--light-gold-color);
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.modal__book-button {
+  margin-top: 64px;
+}
+
+.active__book {
+  opacity: 1;
+  pointer-events: fill;
+}
+
 .swiper {
   width: 620px;
   height: 690px;
@@ -4848,7 +4941,7 @@ a {
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   pointer-events: none;
 }
@@ -4862,7 +4955,7 @@ a {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--gold-color);
   border-radius: 10px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__subscribe-container {
@@ -4897,7 +4990,7 @@ a {
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   pointer-events: none;
 }
@@ -4911,7 +5004,7 @@ a {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--gold-color);
   border-radius: 10px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__reserv-container {
@@ -4946,7 +5039,7 @@ a {
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   pointer-events: none;
 }
@@ -4960,7 +5053,7 @@ a {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border: 2px solid var(--gold-color);
   border-radius: 10px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__form-container {
