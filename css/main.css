@@ -4622,7 +4622,7 @@ a {
   height: 100%;
   overflow: auto;
   padding: 40px 15px 40px 15px;
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -4829,7 +4829,7 @@ a {
   width: 700px;
   height: 550px;
   padding: 40px 15px 40px 15px;
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid var(--gold-color);
@@ -4952,7 +4952,7 @@ a {
   height: 550px;
   overflow: auto;
   padding: 40px 15px 40px 15px;
-  background-image: url("../img/about/bg-img.jpg");
+  background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid var(--gold-color);
