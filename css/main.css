@@ -308,7 +308,7 @@ a {
 
 .hero__lable-wrapper {
   opacity: 0;
-  transform: translate(0px, 120%);
+  transform: translate(0px, 110%);
   transition: all 2.5s ease 0.5s;
 }
 
@@ -333,21 +333,21 @@ a {
   text-transform: capitalize;
   color: var(--gold-color);
   opacity: 0;
-  transform: translate(0px, 120%);
-  transition: all 2.5s ease 0.5s;
+  transform: translate(0px, 110%);
+  transition: all 2.5s ease 0.6s;
 }
 
 .hero__text {
   margin-bottom: 32px;
   opacity: 0;
-  transform: translate(0px, 120%);
-  transition: all 2.5s ease 1s;
+  transform: translate(0px, 110%);
+  transition: all 2.5s ease 0.7s;
 }
 
 .button__wrapper {
   opacity: 0;
-  transform: translate(0px, 120%);
-  transition: all 2.5s ease 1s;
+  transform: translate(0px, 110%);
+  transition: all 2.5s ease 0.8s;
 }
 
 .hero__wrapper-img {
@@ -1169,7 +1169,7 @@ a {
   column-gap: 16px;
   align-items: center;
   opacity: 0;
-  transform: translate(0px, 120%);
+  transform: translate(0px, 105%);
   transition: all 2.5s ease 0.5s;
 }
 
