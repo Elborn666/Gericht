@@ -745,18 +745,37 @@
                 <svg class='login__icon-close'>
                     <use href='./icon/sprite.svg#icon-cross'></use>
                 </svg>
-                <h2 class="login__title title">Log in to the control panel</h2>
-                <form class="login__form">
-                    <input type="email" class="login__email" placeholder="Enter your Email" required>
-                    <input type="password" class="login__password" placeholder="Enter your password" required>
-                    <button type="submit" class="login__button button-gold">Enter</button>
-                </form>
+                <div class="wrapper__singin">
+                    <h2 class="login__title title">Log in to the control panel</h2>
+                    <form class="login__form">
+                        <input type="email" class="login__email" placeholder="Enter your Email" required>
+                        <input type="password" class="login__password" placeholder="Enter your password" required>
+                        <div class="login__wrapper-button">
+                            <button type="submit" class="login__button button-gold">Sign in</button>
+                            <button type="button" class="login__button-signup button-inherit">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="wrapper__singup">
+                    <h2 class="signup__title title">Registration</h2>
+                    <form class="signup__form">
+                        <input type="text" class="signup__name" placeholder="Enter your Name" required>
+                        <input type="email" class="signup__email" placeholder="Enter your Email" required>
+                        <input type="password" class="signup__password" id="password" placeholder="Enter your password" required>
+                        <input type="password" class="signup__password" id="repeat-password" placeholder="Repeat your password" required>
+                        <div class="signup__wrapper-button">
+                            <button type="submit" class="signup__button button-inherit">Sign up</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./js/swiper.js"></script>
+    <script type="module" src="./js/toggleSingup.js"></script>
+    <script type="module" src="./js/pasVerification.js"></script>
     <script type="module" src="./js/video.js"></script>
     <script type="module" src="./js/bookTable.js"></script>
     <script type="module" src="./js/login.js"></script>

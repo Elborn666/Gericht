@@ -57,6 +57,7 @@
 }
 .login__title {
     text-align: center;
+    margin-bottom: 10px;
 }
 .login__form {
     display: flex;
@@ -80,6 +81,20 @@
     background-color: inherit;
     cursor: pointer;
 }
+.login__wrapper-button {
+    display: flex;
+    column-gap: 15px;
+}
+.login__button-signup {
+    color: var(--gold-color);
+    transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+        color: var(--bg-color);
+        background-color: var(--gold-color);
+    }
+}
+
+
 @media screen and (max-width: 767.98px){
     .modal__login-container {    
         width: 400px;
@@ -112,4 +127,7 @@
 .active__book {
     opacity: 1;
     pointer-events: fill;
+}
+.block {
+    display: none;
 }
