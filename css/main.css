@@ -1111,6 +1111,11 @@ a {
     flex-direction: column;
     align-items: center;
   }
+  .main__chef-title,
+.main__chef-text,
+.main__chef-position {
+    margin-bottom: 0px;
+  }
   .main__chef-contant {
     align-items: center;
     margin-left: 0px;
@@ -3442,7 +3447,7 @@ a {
   margin-left: 80px;
 }
 
-.main__chef-lable {
+.chef__lable {
   opacity: 0;
   transform: translate(0px, 120%);
   transition: all 2.5s ease 0.5s;

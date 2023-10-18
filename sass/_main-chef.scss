@@ -164,6 +164,11 @@
         flex-direction: column;
         align-items: center;
     }
+    .main__chef-title,
+    .main__chef-text ,
+    .main__chef-position {
+        margin-bottom: 0px;
+    }
     .main__chef-contant {
         align-items: center;
         margin-left: 0px;
