@@ -16,6 +16,14 @@
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader__title title">Gericht</div>
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
     <header class="header">
         <div class="header__container container">
             <div class="header__body">
@@ -761,8 +769,10 @@
                     <form class="signup__form">
                         <input type="text" class="signup__name" placeholder="Enter your Name" required>
                         <input type="email" class="signup__email" placeholder="Enter your Email" required>
-                        <input type="password" class="signup__password" id="password" placeholder="Enter your password" required>
-                        <input type="password" class="signup__password" id="repeat-password" placeholder="Repeat your password" required>
+                        <input type="password" class="signup__password" id="password" placeholder="Enter your password"
+                            required>
+                        <input type="password" class="signup__password" id="repeat-password"
+                            placeholder="Repeat your password" required>
                         <div class="signup__wrapper-button">
                             <button type="submit" class="signup__button button-inherit">Sign up</button>
                         </div>
@@ -774,6 +784,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./js/swiper.js"></script>
+    <script type="module" src="./js/preloader.js"></script>
     <script type="module" src="./js/toggleSingup.js"></script>
     <script type="module" src="./js/pasVerification.js"></script>
     <script type="module" src="./js/video.js"></script>
