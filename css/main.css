@@ -4107,6 +4107,9 @@ a {
 .sidebar__container {
     width: 280px;
   }
+  .sidebar__input {
+    width: 260px;
+  }
   .sidebar__tag-list {
     gap: 15px;
   }
@@ -4814,40 +4817,35 @@ a {
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.7);
+  overflow-y: auto;
   opacity: 0;
-  transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
+  visibility: hidden;
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__book-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 50;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  padding: 30px 0px;
+}
+
+.modal__book-body {
+  position: relative;
   width: 700px;
-  height: 550px;
   padding: 40px 15px 40px 15px;
   background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid var(--gold-color);
   border-radius: 10px;
-  transform: translate(-50%, -50%);
-}
-
-.modal__book-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 20px;
 }
 
 .book__icon-close {
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: 20px;
   width: 24px;
   height: 24px;
@@ -4857,6 +4855,11 @@ a {
 }
 .book__icon-close:hover {
   fill: var(--gold-color);
+}
+
+.book__title {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .book__form {
@@ -4893,7 +4896,7 @@ a {
 }
 
 @media screen and (max-width: 767.98px) {
-  .modal__book-container {
+  .modal__book-body {
     width: 400px;
   }
   .book__icon-close {
@@ -4906,10 +4909,10 @@ a {
   }
 }
 @media screen and (max-width: 479.98px) {
-  .modal__book-container {
+  .modal__book-body {
     width: 300px;
-    height: 450px;
-    padding: 20px 10px 20px 10px;
+    height: 400px;
+    padding: 50px 10px 20px 10px;
   }
   .book__wrapper-select {
     gap: 16px;
@@ -4925,7 +4928,7 @@ a {
 }
 .active__book {
   opacity: 1;
-  pointer-events: fill;
+  visibility: visible;
 }
 
 .wrapper__singup {
@@ -4982,36 +4985,30 @@ a {
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.7);
+  overflow-y: auto;
   opacity: 0;
-  transition: opacity 550ms cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
+  visibility: hidden;
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__login-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 50;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: 600px;
-  height: 550px;
-  overflow: auto;
+  min-height: 100vh;
+  padding: 30px 0px;
+}
+
+.modal__login-body {
+  position: relative;
+  width: 700px;
   padding: 40px 15px 40px 15px;
   background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   border: 2px solid var(--gold-color);
   border-radius: 10px;
-  transform: translate(-50%, -50%);
-}
-
-.modal__login-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 20px;
 }
 
 .login__icon-close {
@@ -5101,7 +5098,7 @@ a {
 }
 .active__book {
   opacity: 1;
-  pointer-events: fill;
+  visibility: visible;
 }
 
 .block {
@@ -5323,41 +5320,41 @@ a {
 .backdrop__sidebar {
   position: fixed;
   z-index: 60;
-  top: 0px;
+  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  overflow: scroll;
-  pointer-events: none;
+  background-color: rgba(46, 47, 66, 0.7);
+  overflow-y: auto;
   opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--bg-color);
-}
-
-.modal__window-sidebar {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  background-color: var(--bg-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 2px solid var(--gold-color);
-  border-radius: 10px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+  transition: all 800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__sidebar-container {
-  padding: 25px;
-  max-width: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px 0px;
 }
 
 .modal__sidebar-body {
-  text-align: center;
+  position: relative;
+  max-width: 700px;
+  padding: 40px 15px 20px 15px;
+  background-image: url("../img/about/bg-img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid var(--gold-color);
   border-radius: 10px;
 }
 
 .sidebar__close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   width: 24px;
   height: 24px;
   fill: var(--gold-color);
@@ -5365,5 +5362,5 @@ a {
 
 .active__sidebar {
   opacity: 1;
-  pointer-events: all;
+  visibility: visible;
 }/*# sourceMappingURL=main.css.map */
