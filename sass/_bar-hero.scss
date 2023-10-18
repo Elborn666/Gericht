@@ -17,6 +17,7 @@
         height: 146px;
         bottom: -115px;
         right: 17px;
+        animation: rotation 10s linear infinite;
     }
 }
 .hero__bar-body {
@@ -156,4 +157,13 @@
 .active {
     transform: translate(0px, 0px);
     opacity: 1;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

@@ -16,6 +16,7 @@
         height: 146px;
         top: 35%;
         right: 0px;
+        animation: rotation 10s linear infinite;
     }
     &::after {
         content: "";
@@ -28,6 +29,7 @@
         height: 146px;
         bottom: 5px;
         left: 0px;
+        animation: rotation 10s linear infinite;
     }
 }
 .team__list {
@@ -165,5 +167,14 @@
     }
     .overlay-wrapper {
         display: none;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

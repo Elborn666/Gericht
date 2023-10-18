@@ -15,6 +15,7 @@
         height: 146px;
         top: -50px;
         right: 0px;
+        animation: rotation 10s linear infinite;
     }
 }
 .main__testimony-body {
@@ -118,4 +119,13 @@
 .active {
     transform: translate(0px, 0px);
     opacity: 1;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

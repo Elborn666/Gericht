@@ -17,6 +17,7 @@
         height: 146px;
         top: -125px;
         left: 0px;
+        animation: rotation 10s linear infinite;
     }
     &::after {
         content: "";
@@ -28,6 +29,7 @@
         height: 146px;
         bottom: -137px;
         right: 88px;
+        animation: rotation 10s linear infinite;
     }
 }
 .bar__contact-body {
@@ -186,4 +188,13 @@
 .active {
     transform: translate(0px, 0px);
     opacity: 1;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

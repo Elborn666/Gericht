@@ -16,6 +16,7 @@
         height: 146px;
         top: 0px;
         left: 0px;
+        animation: rotation 10s linear infinite;
     }
 }
 .main__menu-body {
@@ -37,5 +38,14 @@
 @media screen and (max-width: 991.98px){
     .main__menu-body {
         height: 600px;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

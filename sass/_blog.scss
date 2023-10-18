@@ -16,6 +16,7 @@
         height: 146px;
         bottom: 0px;
         left: 0px;
+        animation: rotation 10s linear infinite;
     }
 }
 .blog__body {
@@ -363,5 +364,14 @@
     }
     .sidebar__tag-line {
         display: none;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

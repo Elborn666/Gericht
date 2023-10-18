@@ -755,6 +755,7 @@ a {
   height: 146px;
   top: 0px;
   left: 0px;
+  animation: rotation 10s linear infinite;
 }
 
 .main__menu-body {
@@ -779,6 +780,14 @@ a {
 @media screen and (max-width: 991.98px) {
   .main__menu-body {
     height: 600px;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .main__special {
@@ -1097,6 +1106,11 @@ a {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .main__chef-title,
+.main__chef-text,
+.main__chef-position {
+    margin-bottom: 0px;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .main__chef-container {
@@ -1110,11 +1124,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .main__chef-title,
-.main__chef-text,
-.main__chef-position {
-    margin-bottom: 0px;
   }
   .main__chef-contant {
     align-items: center;
@@ -1148,6 +1157,7 @@ a {
   height: 146px;
   top: -50px;
   right: 0px;
+  animation: rotation 10s linear infinite;
 }
 
 .main__testimony-body {
@@ -1255,6 +1265,14 @@ a {
   opacity: 1;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .main__video {
   background-color: var(--bg-color);
   position: relative;
@@ -1473,6 +1491,7 @@ a {
   height: 146px;
   bottom: 123px;
   right: 0px;
+  animation: rotation 10s linear infinite;
 }
 
 .main__blog-body {
@@ -1618,6 +1637,14 @@ a {
   }
   .main__blog-text {
     margin-bottom: 10px;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .main__gallery {
@@ -1845,6 +1872,7 @@ a {
   height: 146px;
   bottom: -115px;
   right: 17px;
+  animation: rotation 10s linear infinite;
 }
 
 .hero__bar-body {
@@ -1992,6 +2020,14 @@ a {
   opacity: 1;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .bar__about {
   background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
@@ -2013,6 +2049,7 @@ a {
   height: 146px;
   top: 0px;
   left: 0px;
+  animation: rotation 10s linear infinite;
 }
 
 .bar__about-body {
@@ -2124,6 +2161,14 @@ a {
   opacity: 1;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .bar__poison {
   background-color: var(--bg-color);
 }
@@ -2313,6 +2358,7 @@ a {
   height: 146px;
   top: -125px;
   left: 0px;
+  animation: rotation 10s linear infinite;
 }
 .bar__contact-container::after {
   content: "";
@@ -2324,6 +2370,7 @@ a {
   height: 146px;
   bottom: -137px;
   right: 88px;
+  animation: rotation 10s linear infinite;
 }
 
 .bar__contact-body {
@@ -2488,6 +2535,14 @@ a {
   opacity: 1;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .services__hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/hero/hero-about.webp");
   background-position: center;
@@ -2572,6 +2627,7 @@ a {
   height: 146px;
   bottom: 20px;
   right: 0px;
+  animation: rotation 10s linear infinite;
 }
 
 .services__quality-body {
@@ -2661,6 +2717,14 @@ a {
   opacity: 1;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .about__hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/hero/hero-about.webp");
   background-position: center;
@@ -2978,6 +3042,7 @@ a {
   height: 146px;
   bottom: -45px;
   left: 0px;
+  animation: rotation 10s linear infinite;
 }
 .about__happy-container::before {
   content: "";
@@ -2989,6 +3054,7 @@ a {
   height: 146px;
   top: 0px;
   right: 0px;
+  animation: rotation 10s linear infinite;
 }
 
 .about__happy-lable {
@@ -3088,6 +3154,14 @@ a {
   opacity: 1;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .contact__map {
   background-color: var(--bg-color);
 }
@@ -3245,6 +3319,7 @@ a {
   height: 146px;
   top: 35%;
   right: 0px;
+  animation: rotation 10s linear infinite;
 }
 .team__container::after {
   content: "";
@@ -3257,6 +3332,7 @@ a {
   height: 146px;
   bottom: 5px;
   left: 0px;
+  animation: rotation 10s linear infinite;
 }
 
 .team__list {
@@ -3410,6 +3486,14 @@ a {
     display: none;
   }
 }
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .chef {
   background-color: var(--bg-color);
 }
@@ -3430,6 +3514,7 @@ a {
   height: 146px;
   bottom: 0px;
   right: 0px;
+  animation: rotation 10s linear infinite;
 }
 
 .chef__body {
@@ -3593,6 +3678,14 @@ a {
   opacity: 1;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .chef__achivements {
   background-image: url("../img/about/bg-img.webp");
   background-repeat: no-repeat;
@@ -3743,6 +3836,7 @@ a {
   height: 146px;
   bottom: 0px;
   left: 0px;
+  animation: rotation 10s linear infinite;
 }
 
 .blog__body {
@@ -4121,6 +4215,14 @@ a {
   }
   .sidebar__tag-line {
     display: none;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .blog__detail {

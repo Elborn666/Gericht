@@ -14,6 +14,7 @@
         height: 146px;
         bottom: -45px;
         left: 0px;
+        animation: rotation 10s linear infinite;
     }
     &::before {
         content: "";
@@ -25,6 +26,7 @@
         height: 146px;
         top: 0px;
         right: 0px;
+        animation: rotation 10s linear infinite;
     }
 }
 .about__happy-lable {
@@ -117,4 +119,13 @@
 .active {
     transform: translate(0px, 0px);
     opacity: 1;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
